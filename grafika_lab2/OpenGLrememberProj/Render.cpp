@@ -249,7 +249,7 @@ void keyUpEvent(OpenGL* ogl, int key)
 
 GLuint texId;
 GLuint texId2;									
-void initRender(OpenGL* ogl)
+void initRender(OpenGL* ogl){
 
 
 	glPixelStorei(GL_UNPACK_ALIGNMENT, 4);
@@ -621,6 +621,7 @@ void Render(OpenGL* ogl)
 		double y = 6 + sqrt(40) / 2 * sin(i * 3.141593);
 
 		glBegin(GL_POLYGON);
+		glColor4f(0.5f, 0.5f, 0.5f, 0.7f);
 		glNormal3d(0, 0, 1);
 		glVertex3dv(H1);
 		glVertex3d(x0, y0, 5);
@@ -633,15 +634,15 @@ void Render(OpenGL* ogl)
 
 	glBegin(GL_TRIANGLES);
 	glNormal3d(0, 0, 1);
-	glColor3f(0.5f, 0.5f, 0.5f);
+	glColor4f(0.5f, 0.5f, 0.5f, 0.7f);
 	glVertex3dv(A1);
 	glVertex3dv(B1);
 	glVertex3dv(H1);
 	glEnd();
 
 	glBegin(GL_TRIANGLES);
+	glColor4f(0.5f, 0.5f, 0.5f, 0.7f);
 	glNormal3d(0, 0, 1);
-	glColor3f(0.5f, 0.5f, 0.5f);
 	glVertex3dv(C1);
 	glVertex3dv(H1);
 	glVertex3dv(E1);
@@ -649,7 +650,7 @@ void Render(OpenGL* ogl)
 
 	glBegin(GL_TRIANGLES);
 	glNormal3d(0, 0, 1);
-	glColor3f(0.5f, 0.5f, 0.5f);
+	glColor4f(0.5f, 0.5f, 0.5f, 0.7f);
 	glVertex3dv(B1);
 	glVertex3dv(H1);
 	glVertex3dv(C1);
@@ -657,7 +658,7 @@ void Render(OpenGL* ogl)
 
 	glBegin(GL_TRIANGLES);
 	glNormal3d(0, 0, 1);
-	glColor3f(0.5f, 0.5f, 0.5f);
+	glColor4f(0.5f, 0.5f, 0.5f, 0.7f);
 	glVertex3dv(C1);
 	glVertex3dv(E1);
 	glVertex3dv(D1);
@@ -673,7 +674,7 @@ void Render(OpenGL* ogl)
 
 	glBegin(GL_TRIANGLES);
 	glNormal3d(0, 0, 1);
-	glColor3f(0.5f, 0.5f, 0.5f);
+	glColor4f(0.5f, 0.5f, 0.5f, 0.7f);
 	glVertex3dv(H1);
 	glVertex3dv(E1);
 	glVertex3dv(F1);
